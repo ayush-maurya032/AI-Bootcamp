@@ -11,7 +11,7 @@ This repository documents my journey from fundamentals to building production-re
   - [x] Git & GitHub
   - [x] GitHub CLI
   - [x] VS Code Setup
-  - [x] Project Structure
+  - [x] Project Structure 
   - [x] .gitignore
 
 - [ ] Sprint 1 - Python Fundamentals
