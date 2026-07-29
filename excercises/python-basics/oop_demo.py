@@ -1,12 +1,19 @@
 class Student:
-    pass
+    def __init__(self,name,age): #constructor
+        self.name = name
+        self.age = age
 
+    def introduce(self):
+        print(self)
 
-student1 = Student()
-student2 = Student()
+student1 = Student("Ayush", 25)
+student2 = Student("Rahul", 22)
 
-print(student1)
-print(student2)
+student1.introduce()
+student2.introduce()
 
-print(student1 == student2)
-print(student1 is student2)
+print(student1.name)
+print(student1.age)
+
+print(student2.name)
+print(student2.age)
