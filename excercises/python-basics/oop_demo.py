@@ -13,20 +13,21 @@ class Student:
     def have_birthday(self):
          self.age += 1
  
-    def change_name(self,new_name):
-        self.name = new_name
+    def change_name(self, new_name):
+
+         if new_name == "":
+            raise ValueError("Name cannot be empty.")
+
+         self.name = new_name
 
 student1 = Student("Ayush", 25)
 student2 = Student("Rahul", 22)
 
-student1.introduce()
-student2.introduce()
-student1.have_birthday()
-print(student1)
 
 
-print(student1)
 
-student1.change_name("Amit")
+try:
+    student1.change_name("")
 
-print(student1)
+except ValueError as e:
+    print(e)
